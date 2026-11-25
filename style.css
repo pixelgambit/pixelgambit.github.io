@@ -86,7 +86,7 @@ h3 { font-size: 1.05rem; margin: 24px 0 6px; }
   background: var(--accent-soft); color: var(--accent);
 }
 
-.app-hero { display: flex; gap: 20px; align-items: center; margin-bottom: 8px; }
+.app-hero { display: flex; gap: 20px; align-items: center; margin-bottom: 16px; }
 .app-hero img { width: 88px; height: 88px; border-radius: 22px; flex: none; }
 
 .btn {
@@ -141,3 +141,13 @@ footer.site a { color: var(--muted); }
   .app-hero img { width: 68px; height: 68px; border-radius: 17px; }
   .shots img { width: 180px; }
 }
+
+.shots.wide img { width: 340px; aspect-ratio: 3 / 2; object-fit: cover; }
+@media (max-width: 520px) { .shots.wide img { width: 260px; } }
+.app-hero img.pixel, .app-card img.pixel { image-rendering: pixelated; }
+
+table.controls { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; font-size: .95rem; }
+table.controls th, table.controls td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+table.controls tr:last-child td { border-bottom: 0; }
+table.controls th { color: var(--muted); font-weight: 600; }
+.table-scroll { overflow-x: auto; }
