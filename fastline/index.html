@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fastline · Pixel Gambit</title>
-  <meta name="description" content="Help test Fastline, a private fasting tracker for Android.">
-  <meta property="og:title" content="Test Fastline">
-  <meta property="og:description" content="Help test Fastline, a private fasting tracker for Android.">
+  <meta name="description" content="Fastline is a private intermittent fasting timer for Android that shows what your body is likely doing, hour by hour. Free, no account, no ads, no tracking.">
+  <meta property="og:title" content="Fastline: a private fasting timer">
+  <meta property="og:description" content="A private intermittent fasting timer for Android that shows what your body is likely doing, hour by hour.">
+  <meta property="og:image" content="https://pixelgambit.github.io/assets/fastline/icon.png">
   <link rel="icon" href="../assets/fastline/icon.png">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -14,7 +15,7 @@
   <header class="site">
     <div class="wrap">
       <a class="brand" href="../"><span class="brand-mark">PG</span>Pixel Gambit</a>
-      <nav><a href="../">Apps</a><a href="privacy/">Privacy</a></nav>
+      <nav><a href="../">Apps</a><a href="#join">Test</a><a href="privacy/">Privacy</a></nav>
     </div>
   </header>
 
@@ -24,10 +25,10 @@
         <img src="../assets/fastline/icon.png" alt="Fastline icon">
         <div>
           <h1>Fastline</h1>
-          <div class="tags"><span class="tag">Android</span><span class="tag">Closed test open</span></div>
+          <div class="tags"><span class="tag">Android</span><span class="tag">Free</span><span class="tag">Closed test open</span></div>
         </div>
       </div>
-      <p class="lede">A calm fasting tracker that keeps everything on your phone. No account, no ads, no tracking. Start a fast with one tap and see what's happening in your body as the hours go by.</p>
+      <p class="lede">A quiet, private timer for intermittent fasting. Press start when you finish eating, press stop when you eat again, and Fastline shows what your body is likely doing in between, with the evidence for each claim shown plainly. No account, no ads, no tracking: everything stays on your phone.</p>
 
       <div class="actions">
         <a class="btn" href="#join">Become a tester</a>
@@ -42,14 +43,104 @@
         <img src="../assets/fastline/timer-dark.jpg" alt="The fast timer in dark mode" loading="lazy">
       </div>
 
-      <h2>What it does</h2>
+      <h2>At a glance</h2>
+      <div class="facts">
+        <div class="card"><strong>Free</strong><p>Every feature, with no subscription and nothing locked away.</p></div>
+        <div class="card"><strong>Private</strong><p>No account, no sign in, no ads, no analytics. Nothing leaves your phone.</p></div>
+        <div class="card"><strong>Honest</strong><p>Every claim about the body is labelled strong, moderate or limited evidence.</p></div>
+        <div class="card"><strong>For adults</strong><p>A wellness tracker for people 18 and over. Not a medical device.</p></div>
+      </div>
+
+      <h2>The timer</h2>
+      <p>One button starts a fast and the same button ends it. The timer works from the moment you started rather than counting up, so closing the app, force quitting it or restarting your phone never loses your place. Tap the clock to switch between time elapsed and time remaining, and tap the start or end time to correct it if you forgot to press the button.</p>
+      <p>Choose the length that suits you:</p>
+      <div class="table-scroll">
+        <table class="controls">
+          <tr><th>Fast</th><th>Split</th><th>Good for</th></tr>
+          <tr><td>12:12</td><td>12h fasting, 12h eating</td><td>The easiest start. Mostly happens overnight.</td></tr>
+          <tr><td>14:10</td><td>14h fasting, 10h eating</td><td>A gentle step up from 12 hours.</td></tr>
+          <tr><td>16:8</td><td>16h fasting, 8h eating</td><td>The most popular. Skip breakfast or an evening snack.</td></tr>
+          <tr><td>18:6</td><td>18h fasting, 6h eating</td><td>A longer daily fast.</td></tr>
+          <tr><td>20:4</td><td>20h fasting, 4h eating</td><td>Eating within a 4 hour window.</td></tr>
+          <tr><td>OMAD</td><td>23h fasting, one meal</td><td>One meal a day. Best once you have some experience.</td></tr>
+          <tr><td>72h</td><td>3 days fasting</td><td>An extended fast, with its own safety guidance.</td></tr>
+        </table>
+      </div>
+      <p>A home screen widget shows the fast you are in, when it started and when it is planned to end, without opening the app.</p>
+
+      <h2>What is happening during a fast</h2>
+      <p>The ring on the timer runs through the stages a fast typically passes through, cold colours at the start and warm ones further in. Tap any stage to read what is going on. The Body tab lays them all out as a timeline, marks where you are now and counts down to the next one.</p>
+      <div class="table-scroll">
+        <table class="controls">
+          <tr><th>Stage</th><th>Usually begins</th><th>What is going on</th><th>Evidence</th></tr>
+          <tr><td>Fed State</td><td>0h</td><td>Digesting and distributing the meal you just ate.</td><td>Strong</td></tr>
+          <tr><td>Post-Absorptive</td><td>4h</td><td>Insulin is falling and your liver is starting to release stored glycogen.</td><td>Strong</td></tr>
+          <tr><td>Glycogen Winds Down</td><td>12h</td><td>Glycogen stores are winding down and your body is starting to tap into fat for fuel.</td><td>Strong</td></tr>
+          <tr><td>The Metabolic Switch</td><td>18h</td><td>Approaching the handoff from burning mostly glucose to burning fat and ketones.</td><td>Moderate</td></tr>
+          <tr><td>Growth Hormone Surge</td><td>24h</td><td>Growth hormone is climbing, one of the best documented effects of a day-long fast.</td><td>Strong</td></tr>
+          <tr><td>Deeper Ketosis</td><td>48h</td><td>Ketones keep rising, and resting metabolism runs a little faster, not slower.</td><td>Strong</td></tr>
+          <tr><td>Ketosis Stabilizes</td><td>72h</td><td>Deep ketosis levels off and growth hormone stays elevated.</td><td>Moderate</td></tr>
+          <tr><td>Sustained Fat Adaptation</td><td>96h</td><td>Extended fasting territory.</td><td>Limited</td></tr>
+        </table>
+      </div>
+      <p>The hours are averages drawn from published research, not readings from your body. Fastline cannot measure your glucose, ketones or hormones, and real timings shift with your last meal, your sleep and your activity. The app says so wherever it matters.</p>
+
+      <h2>Evidence you can see</h2>
+      <p>Anything in Fastline that makes a claim about the body carries one of three labels, and tapping a label explains what it means:</p>
       <ul class="features">
-        <li><strong>One button</strong> to start and stop a fast. The timer keeps going even if you close the app or restart your phone.</li>
-        <li><strong>Fast lengths from 12:12 to OMAD</strong>, plus a 72-hour extended fast with its own safety guidance.</li>
-        <li><strong>Body timeline</strong> showing what's typically happening hour by hour, with each stage labelled by how strong the evidence is.</li>
-        <li><strong>History</strong> with a month calendar, a forgiving streak and a fast length chart.</li>
-        <li><strong>Learn</strong>: 54 plain-language answers to common fasting questions, all searchable.</li>
-        <li><strong>Private by design</strong>: nothing is sent anywhere. Your data stays on your phone.</li>
+        <li><strong>Strong evidence</strong>: human trials, reviews pooling several trials, or physiology settled enough to sit in a textbook. Separate studies broadly agree.</li>
+        <li><strong>Moderate evidence</strong>: real human research, but not much of it, or studies that disagree. The direction is probably right and the detail may change.</li>
+        <li><strong>Limited evidence</strong>: animal studies, reasoning about how the body ought to work, or a single small human study. Often repeated with confidence elsewhere, rarely tested properly in people.</li>
+      </ul>
+      <p>The label rates how much good research stands behind the statement, nothing else. Safety advice carries no label, because advice is not a finding.</p>
+
+      <h2>Learn: 54 answers about fasting</h2>
+      <p>A searchable knowledge base in five sections. Questions are asked neutrally, so they never assume their own answer, and search looks inside the answers too, so a question about coffee or salt turns up even when no title mentions it.</p>
+      <div class="facts">
+        <div class="card"><strong>Your first fasting week</strong><p>Which length to start with, what the first week feels like, missed days and weighing yourself.</p></div>
+        <div class="card"><strong>The method</strong><p>How intermittent fasting works, longer windows, skipping breakfast or dinner, 5:2 and alternate day fasting.</p></div>
+        <div class="card"><strong>Problems while fasting</strong><p>Hunger, headaches, dizziness, sleep, feeling cold, social plans, shift work and stalled weight.</p></div>
+        <div class="card"><strong>Health</strong><p>Medication, long-term conditions, autophagy, metabolism, lifespan and side effects, each with its evidence.</p></div>
+        <div class="card"><strong>Using Fastline</strong><p>The widget, notifications, fixing a fast's times, moving to a new phone and where your data lives.</p></div>
+      </div>
+
+      <h2>Your history</h2>
+      <ul class="features">
+        <li><strong>A month at a time.</strong> A calendar with each day coloured by the deepest stage that fast reached, and arrows to page back through earlier months.</li>
+        <li><strong>The month in numbers</strong>: total hours, average fast and number of fasts, compared with the same stretch of last month.</li>
+        <li><strong>Fast lengths chart</strong>, scrolling through every fast in the month.</li>
+        <li><strong>Fasting versus eating</strong>: how the month divides between the two, and how long your eating window averages.</li>
+        <li><strong>A forgiving streak</strong> that allows a rest day each week, so one missed day does not wipe out a month.</li>
+        <li><strong>Records</strong>: longest fast, best week, total hours fasted and your best streak.</li>
+        <li><strong>Every past fast</strong> can be opened to see its details, and edited or deleted. You can also log a fast you forgot to track.</li>
+        <li><strong>Weight logging</strong> in pounds or kilograms, if you want it, on the Body tab.</li>
+      </ul>
+
+      <h2>Reminders that stay out of the way</h2>
+      <p>Four notifications, each switched on or off on its own:</p>
+      <ul class="features">
+        <li>A daily reminder to start a fast, off until you turn it on.</li>
+        <li>A quiet ongoing notification while a fast runs.</li>
+        <li>A note as you reach each new stage.</li>
+        <li>An alert when your fast is complete.</li>
+      </ul>
+      <p>Alerts are scheduled on the phone itself, so they need no internet connection.</p>
+
+      <h2>Private by design</h2>
+      <ul class="features">
+        <li>No account and no sign in. Open it and start.</li>
+        <li>Your fasts, weights, notes and settings are stored on your phone and nowhere else.</li>
+        <li>No ads, no analytics and no tracking code. Fastline makes no network connections of its own.</li>
+        <li>Backups are a single file you save wherever you choose, and restore from when you move to a new phone.</li>
+        <li>Uninstalling removes everything the app stored.</li>
+      </ul>
+      <p><a href="privacy/">Read the full privacy policy.</a></p>
+
+      <h2>Also</h2>
+      <ul class="features">
+        <li>Light and dark themes, or follow your phone's setting.</li>
+        <li>A safety step before your first fast, listing who should talk to a doctor first.</li>
+        <li>An optional Tip with PayPal button in Settings. It unlocks nothing: every feature is free either way.</li>
       </ul>
 
       <h2 id="join">How to join the test</h2>
@@ -76,11 +167,11 @@
       </ol>
 
       <div class="note">
-        <p><strong>Found a bug or have an idea?</strong> Use "Send feedback" on Fastline's Play Store page. It goes straight to the developer, and every note is read.</p>
+        <p><strong>Found a bug or have an idea?</strong> Use "Send feedback" on Fastline's Play Store page, or email <a href="mailto:ericdekock@gmail.com">ericdekock@gmail.com</a>. Every note is read.</p>
       </div>
 
       <div class="note">
-        <p><strong>Fastline is not medical advice</strong> and is for adults only. Talk to a doctor before fasting if you're pregnant or breastfeeding, have diabetes, a history of disordered eating, or any heart, liver or kidney condition. <a href="privacy/">Read the full safety notes.</a></p>
+        <p><strong>Fastline is not medical advice</strong> and is for adults only. Fasting is not right for everyone. Talk to a doctor before you start if you are pregnant or breastfeeding, have a history of disordered eating or are underweight, have diabetes or use insulin, take medication sensitive to blood sugar or electrolytes, are recovering from major surgery, have a liver, kidney or heart condition, or drink heavily. <a href="privacy/">Read the full safety notes.</a></p>
       </div>
     </div>
   </main>

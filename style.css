@@ -102,7 +102,7 @@ h3 { font-size: 1.05rem; margin: 24px 0 6px; }
   scroll-snap-type: x mandatory;
 }
 .shots img {
-  width: 220px; flex: none; border-radius: 18px; border: 1px solid var(--border);
+  width: 200px; flex: none; border-radius: 18px; border: 1px solid var(--border);
   scroll-snap-align: start;
 }
 
@@ -124,6 +124,12 @@ ol.steps p { margin: 4px 0 0; color: var(--muted); }
   border-radius: var(--radius); padding: 16px 20px; margin-top: 24px;
 }
 .note p { margin: 0; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.facts .card { padding: 16px 18px; }
+.facts strong { display: block; }
+.facts p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+table.controls td:first-child { font-weight: 600; white-space: nowrap; }
 
 ul.features { padding-left: 20px; }
 ul.features li { margin: 6px 0; }
