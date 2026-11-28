@@ -169,6 +169,7 @@ body.mb h2 {
 
 /* Credits and footer */
 .mb-credit { max-width: 50em; margin: 64px auto 0; text-align: center; color: #8d7d66; font-size: .85rem; }
+.mb-credit.mb-disclaimer { margin-top: 12px; font-size: .8rem; font-style: italic; }
 .mb-footer { margin-top: 56px; border-top: 1px solid var(--mb-line); color: #8d7d66; font-size: .85rem; }
 .mb-footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; padding-top: 24px; padding-bottom: 32px; }
 .mb-footer a { color: #8d7d66 !important; }
