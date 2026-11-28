@@ -5,120 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Monster Bound · Pixel Gambit</title>
   <meta name="description" content="Monster Bound is a roguelike card crawl through a 44-card dungeon. Fight monsters, bind weapons and ration your potions, one room at a time. Testers wanted on Google Play.">
+  <meta name="theme-color" content="#120d09">
   <meta property="og:title" content="Monster Bound: a roguelike card crawl">
   <meta property="og:description" content="A roguelike card crawl through a 44-card dungeon. Testers wanted on Google Play.">
-  <meta property="og:image" content="https://pixelgambit.github.io/assets/monster-bound/boss-weapon-or-fists.jpg">
+  <meta property="og:image" content="https://pixelgambit.github.io/assets/monster-bound/title.jpg">
   <link rel="icon" href="../assets/monster-bound/icon.png">
+  <link rel="preload" href="../assets/monster-bound/fonts/CinzelDecorative-Bold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="mb.css?v=3">
 </head>
-<body>
-  <header class="site">
+<body class="mb">
+  <header class="mb-header">
     <div class="wrap">
-      <a class="brand" href="../"><span class="brand-mark">PG</span>Pixel Gambit</a>
-      <nav><a href="../">Apps</a><a href="#look">Screenshots</a><a href="#join">Test</a></nav>
+      <a class="mb-brand" href="../"><span class="brand-mark">PG</span>Pixel Gambit</a>
+      <nav><a class="hide-sm" href="#how">How to play</a><a href="#look">Screenshots</a><a href="#join">Test</a></nav>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
-      <div class="app-hero">
-        <img src="../assets/monster-bound/icon.png" alt="Monster Bound icon">
-        <div>
-          <h1>Monster Bound</h1>
-          <div class="tags"><span class="tag">Android</span><span class="tag">Card game</span><span class="tag">Testers wanted</span></div>
+    <section class="mb-hero">
+      <div class="wrap">
+        <h1 class="mb-title">Monster Bound</h1>
+        <p class="mb-tagline">A roguelike card crawl through a 44-card dungeon. Fight monsters, bind weapons and ration your potions, one room at a time.</p>
+        <div class="mb-badges"><span>Android</span><span>Free</span><span>No ads</span><span class="live">Testers wanted</span></div>
+        <div class="mb-actions">
+          <a class="mb-btn gold" href="#join">Become a tester</a>
+          <a class="mb-btn" href="#how">How to play</a>
+        </div>
+        <img class="mb-shot" src="../assets/monster-bound/boss-weapon-or-fists.jpg" alt="The Jack of Clubs lifted from a room on green felt, with the choice of weapon or fists and the health each leaves" width="1600" height="900">
+      </div>
+    </section>
+
+    <section class="mb-section">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>At a glance</h2>
+        <p class="mb-intro">Every room deals you four cards. Choose the order well, because the deck does not forgive.</p>
+        <div class="mb-facts">
+          <div class="mb-panel"><div class="suit" aria-hidden="true">&#9824;&#xFE0E;</div><strong>Quick runs</strong><p>One deck, one life. A run takes a few minutes, win or lose.</p></div>
+          <div class="mb-panel"><div class="suit r" aria-hidden="true">&#9829;&#xFE0E;</div><strong>Easy to learn</strong><p>Four cards a room and a handful of rules. The depth is in the choices.</p></div>
+          <div class="mb-panel"><div class="suit r" aria-hidden="true">&#9830;&#xFE0E;</div><strong>Real playing cards</strong><p>A classic deck on real photographed tables, with music by human composers.</p></div>
+          <div class="mb-panel"><div class="suit" aria-hidden="true">&#9827;&#xFE0E;</div><strong>Free, no ads</strong><p>No account, no tracking, nothing to buy. It works offline.</p></div>
         </div>
       </div>
-      <p class="lede">A roguelike card crawl through a 44-card dungeon. Every room deals you four cards: monsters to fight, weapons to bind and potions to drink. Choose the order well, because the deck does not forgive.</p>
+    </section>
 
-      <div class="actions">
-        <a class="btn" href="#join">Become a tester</a>
-        <a class="btn secondary" href="#look">See screenshots</a>
+    <section class="mb-section" id="how">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>How a run works</h2>
+        <p class="mb-intro">You start with 20 health and a shuffled deck. Each room puts four cards on the table, and you must deal with three of them before you can move on. The fourth stays behind and becomes part of the next room.</p>
+        <div class="mb-cards">
+          <div class="mb-card">
+            <span class="corner" aria-hidden="true">K<br>&#9824;&#xFE0E;</span><span class="corner br" aria-hidden="true">K<br>&#9824;&#xFE0E;</span>
+            <div class="pip" aria-hidden="true">&#9824;&#xFE0E;&#9827;&#xFE0E;</div>
+            <h3>Monsters</h3>
+            <div class="suits">Spades and clubs</div>
+            <p>Hit you for their rank, 2 up to 14 for an Ace. Fight them with a weapon or with your fists.</p>
+          </div>
+          <div class="mb-card">
+            <span class="corner red" aria-hidden="true">10<br>&#9830;&#xFE0E;</span><span class="corner br red" aria-hidden="true">10<br>&#9830;&#xFE0E;</span>
+            <div class="pip red" aria-hidden="true">&#9830;&#xFE0E;</div>
+            <h3>Weapons</h3>
+            <div class="suits">Diamonds</div>
+            <p>Soak up a monster's damage. Once a weapon kills, it is bound: it can only face monsters no stronger than the last one it beat.</p>
+          </div>
+          <div class="mb-card">
+            <span class="corner red" aria-hidden="true">7<br>&#9829;&#xFE0E;</span><span class="corner br red" aria-hidden="true">7<br>&#9829;&#xFE0E;</span>
+            <div class="pip red" aria-hidden="true">&#9829;&#xFE0E;</div>
+            <h3>Potions</h3>
+            <div class="suits">Hearts</div>
+            <p>Heal you, up to 20. Only one potion works per room, so a second is simply thrown away.</p>
+          </div>
+        </div>
+        <p class="mb-rule-note">Don't like a room? Escape it before you touch a card, and its cards go to the bottom of the deck. You can't escape two rooms in a row, so pick your moment. Clear the whole deck to win. Your score counts what is left of you, or what is left of the dungeon.</p>
       </div>
+    </section>
 
-      <img class="hero-shot" src="../assets/monster-bound/boss-weapon-or-fists.jpg" alt="The Jack of Clubs lifted from a room on green felt, with the choice of weapon or fists and the health each leaves">
-
-      <h2>At a glance</h2>
-      <div class="facts">
-        <div class="card"><strong>Quick runs</strong><p>One deck, one life. A run takes a few minutes, win or lose.</p></div>
-        <div class="card"><strong>Easy to learn</strong><p>Four cards a room and a handful of rules. The depth is in the choices.</p></div>
-        <div class="card"><strong>Real playing cards</strong><p>A classic deck on real photographed tables, with music by human composers.</p></div>
-        <div class="card"><strong>Free, no ads</strong><p>No account, no tracking, nothing to buy. It works offline.</p></div>
+    <section class="mb-section" id="look">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>A look inside</h2>
+        <p class="mb-intro">Landscape and touch first, sized for a thumb, from wide phones to tablets.</p>
+        <div class="mb-gallery">
+          <figure class="wide"><img src="../assets/monster-bound/title.jpg" alt="The title screen: a fan of playing cards, 10 to Ace, over the Monster Bound name on dark wood" loading="lazy" width="1600" height="900"><figcaption>The title screen</figcaption></figure>
+          <figure><img src="../assets/monster-bound/room-of-four.jpg" alt="A room of four playing cards on green felt: the Queen of Clubs, the 4 of Clubs, the 8 of Diamonds and the 6 of Hearts" loading="lazy" width="1600" height="900"><figcaption>A new room: four cards, deal with three</figcaption></figure>
+          <figure><img src="../assets/monster-bound/card-viewer.jpg" alt="The King of Spades shown large in the card viewer: a boss that hits for 13" loading="lazy" width="1600" height="900"><figcaption>Tap the eye to see any card up close</figcaption></figure>
+          <figure><img src="../assets/monster-bound/bound-weapon.jpg" alt="The 10 of Diamonds with the monsters it has beaten fanned behind it" loading="lazy" width="1600" height="900"><figcaption>A bound weapon carries the monsters it has beaten</figcaption></figure>
+          <figure><img src="../assets/monster-bound/victory.jpg" alt="VICTORY over the table, with a burst of gold suit symbols" loading="lazy" width="1600" height="900"><figcaption>All 44 cards cleared</figcaption></figure>
+          <figure><img src="../assets/monster-bound/run-report.jpg" alt="The run report: the result, how it ended and health through the run" loading="lazy" width="1600" height="900"><figcaption>A report on every run</figcaption></figure>
+          <figure><img src="../assets/monster-bound/settings.jpg" alt="Settings: blue and red card backs and a choice of real photographed tables" loading="lazy" width="1600" height="900"><figcaption>Blue or red backs, and real photographed tables</figcaption></figure>
+        </div>
       </div>
+    </section>
 
-      <h2>How a run works</h2>
-      <p>You start with 20 health and a shuffled deck. Each room puts four cards on the table, and you must deal with three of them before you can move on. The fourth stays behind and becomes part of the next room.</p>
-      <div class="table-scroll">
-        <table class="controls">
-          <tr><th>Card</th><th>Suits</th><th>What it does</th></tr>
-          <tr><td>Monsters</td><td>Spades and clubs</td><td>Hit you for their rank, 2 up to 14 for an Ace. Fight them with a weapon or with your fists.</td></tr>
-          <tr><td>Weapons</td><td>Diamonds</td><td>Soak up a monster's damage. Once a weapon kills, it is bound: it can only face monsters no stronger than the last one it beat.</td></tr>
-          <tr><td>Potions</td><td>Hearts</td><td>Heal you, up to 20. Only one potion works per room, so a second is simply thrown away.</td></tr>
-        </table>
+    <section class="mb-section">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>What's in it</h2>
+        <p class="mb-intro">Small rules, a real table and every choice laid bare.</p>
+        <ul class="mb-features">
+          <li><strong>Real playing cards.</strong> A classic deck with public-domain court figures and pip layouts, and blue or red backs.</li>
+          <li><strong>A real table.</strong> Cards are shuffled, dealt and played like physical cards, with sound, a shake when a blow lands and a buzz in your hand.</li>
+          <li><strong>Pick your table.</strong> Green felt, dark wood, or real photographed cloth, wood, stone and leather.</li>
+          <li><strong>Every choice shows its cost.</strong> Lift a card and it tells you the health each move leaves you, or warns you it would be fatal.</li>
+          <li><strong>See the dungeon.</strong> Tap the deck to see every card still to come, or the discard pile to see what is gone.</li>
+          <li><strong>Hints when you want them.</strong> Ask for the best move and the reason for it, or switch on short tips the first time each situation comes up.</li>
+          <li><strong>A report on every run.</strong> How it ended, your health room by room, every monster and what killed it. Records keep your bests, your totals and your nemesis.</li>
+          <li><strong>Pick up where you left off.</strong> A run in progress is saved as you play.</li>
+        </ul>
       </div>
-      <p>Don't like a room? Escape it before you touch a card, and its cards go to the bottom of the deck. You can't escape two rooms in a row, so pick your moment. Clear the whole deck to win. Your score counts what is left of you, or what is left of the dungeon.</p>
+    </section>
 
-      <h2 id="look">A look inside</h2>
-      <div class="gallery">
-        <figure><img src="../assets/monster-bound/room-of-four.jpg" alt="A room of four playing cards on green felt: the Queen of Clubs, the 4 of Clubs, the 8 of Diamonds and the 6 of Hearts" loading="lazy"><figcaption>A new room: four cards, deal with three</figcaption></figure>
-        <figure><img src="../assets/monster-bound/card-viewer.jpg" alt="The King of Spades shown large in the card viewer: a boss that hits for 13" loading="lazy"><figcaption>Tap the eye to see any card up close</figcaption></figure>
-        <figure><img src="../assets/monster-bound/bound-weapon.jpg" alt="The 10 of Diamonds with the monsters it has beaten fanned behind it" loading="lazy"><figcaption>A bound weapon carries the monsters it has beaten</figcaption></figure>
-        <figure><img src="../assets/monster-bound/victory.jpg" alt="VICTORY over the table, with a burst of gold suit symbols" loading="lazy"><figcaption>All 44 cards cleared</figcaption></figure>
-        <figure><img src="../assets/monster-bound/run-report.jpg" alt="The run report: the result, how it ended and health through the run" loading="lazy"><figcaption>A report on every run</figcaption></figure>
-        <figure><img src="../assets/monster-bound/title.jpg" alt="The title screen: a fan of playing cards, 10 to Ace, over the Monster Bound name on dark wood" loading="lazy"><figcaption>The title screen</figcaption></figure>
-        <figure><img src="../assets/monster-bound/settings.jpg" alt="Settings: blue and red card backs and a choice of real photographed tables" loading="lazy"><figcaption>Blue or red backs, and real photographed tables</figcaption></figure>
+    <section class="mb-section" id="no-ai">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>No AI-generated art or music</h2>
+        <div class="mb-panel mb-human">
+          <p>Everything you see and hear in Monster Bound was made by people. The cards are real playing cards: the court figures are Byron Knoll's public-domain designs and the pips are drawn by the game itself. The tables are real photographs of felt, wood, stone and leather. The music is by human composers Darren Curtis and AlkaKrab, and the title is set in Cinzel Decorative, a typeface by Natanael Gama.</p>
+        </div>
       </div>
+    </section>
 
-      <h2>What's in it</h2>
-      <ul class="features">
-        <li><strong>Real playing cards.</strong> A classic deck with public-domain court figures and pip layouts, and blue or red backs.</li>
-        <li><strong>A real table.</strong> Cards are shuffled, dealt and played like physical cards, with sound, a shake when a blow lands and a buzz in your hand.</li>
-        <li><strong>Pick your table.</strong> Green felt, dark wood, or real photographed cloth, wood, stone and leather.</li>
-        <li><strong>Every choice shows its cost.</strong> Lift a card and it tells you the health each move leaves you, or warns you it would be fatal.</li>
-        <li><strong>See the dungeon.</strong> Tap the deck to see every card still to come, or the discard pile to see what is gone.</li>
-        <li><strong>Hints when you want them.</strong> Ask for the best move and the reason for it, or switch on short tips the first time each situation comes up.</li>
-        <li><strong>A report on every run.</strong> How it ended, your health room by room, every monster and what killed it. Records keep your bests, your totals and your nemesis.</li>
-        <li><strong>Pick up where you left off.</strong> A run in progress is saved as you play.</li>
-        <li><strong>Made for your phone.</strong> Landscape and touch first, sized for a thumb, from wide phones to tablets.</li>
-      </ul>
+    <section class="mb-section" id="join">
+      <div class="wrap">
+        <span class="mb-kicker" aria-hidden="true">&#9824;&#xFE0E; <span class="r">&#9829;&#xFE0E;</span> <span class="r">&#9830;&#xFE0E;</span> &#9827;&#xFE0E;</span>
+        <h2>Join the test</h2>
+        <p class="mb-intro">Before Monster Bound can launch, Google Play needs at least 12 testers to keep it installed until Google approves it for release, so every tester really helps. You'll need an Android phone and the Google account you use for Play. You don't have to win, or even play much: opening it once a day is plenty.</p>
+        <div class="mb-panel mb-status">
+          <span class="dot" aria-hidden="true"></span>
+          <p><strong>The test is open now.</strong> Google has approved Monster Bound for testing on Google Play. Join the group, opt in and install: it takes about five minutes.</p>
+        </div>
+        <ol class="mb-steps">
+          <li class="mb-panel">
+            <strong>Join the testers group</strong>
+            <p>Join the Pixel Gambit testers Google Group with the same Google account you use on your phone. If you use a different account, Google won't count you as a tester. Already in it for Fastline? Then you're all set for this step.</p>
+            <a class="mb-btn gold small" href="https://groups.google.com/g/pixelgambit-testers">Join the group</a>
+          </li>
+          <li class="mb-panel">
+            <strong>Opt in on Google Play</strong>
+            <p>Open the testing page with the same Google account and tap "Become a tester". If it says the app isn't available, wait a few minutes after joining the group and try again.</p>
+            <a class="mb-btn gold small" href="https://play.google.com/apps/testing/com.pixelgambit.monsterbound">Open the testing page</a>
+          </li>
+          <li class="mb-panel">
+            <strong>Install Monster Bound from Play</strong>
+            <p>Download it from the Play Store link on the testing page, then open it at least once.</p>
+          </li>
+          <li class="mb-panel">
+            <strong>Open it once a day until it's approved</strong>
+            <p>Keep it installed and open it once a day if you can, until Google approves it for release (usually about 3 weeks). We'll post in the group when it's approved. Uninstalling before then means you stop counting as a tester.</p>
+          </li>
+        </ol>
+        <p class="mb-feedback"><strong>Found a bug or have an idea?</strong> Use "Send feedback" on Monster Bound's Play Store page, or email <a href="mailto:ericdekock@gmail.com">ericdekock@gmail.com</a>. Every note is read.</p>
 
-      <h2 id="no-ai">No AI-generated art or music</h2>
-      <p>Everything you see and hear in Monster Bound was made by people. The cards are real playing cards: the court figures are Byron Knoll's public-domain designs and the pips are drawn by the game itself. The tables are real photographs of felt, wood, stone and leather. The music is by human composers Darren Curtis and AlkaKrab, and the title is set in Cinzel Decorative, a typeface by Natanael Gama.</p>
-
-      <h2 id="join">How to join the test</h2>
-      <div class="note">
-        <p><strong>The test is open now.</strong> Google has approved Monster Bound for testing on Google Play. Join the group, opt in and install: it takes about five minutes.</p>
+        <p class="mb-credit">Monster Bound is inspired by <em>Scoundrel</em>, a solo card game by Zach Gage and Kurt Bieg. Music by Darren Curtis and AlkaKrab. Table photographs by Jenelle van Heerden, Rob Tuytel and Dimitrios Savva (Poly Haven), Lennart Demes (ambientCG), Brady Erickson (Texturelabs), Karolina Grabowska (Kaboompics) and Everytexture. Fonts: Cinzel Decorative and Noto Serif (SIL Open Font License). <a href="privacy/">Privacy policy</a>.</p>
       </div>
-      <p>Before Monster Bound can launch, Google Play needs at least 12 testers to stay opted in for 14 days in a row, so every tester really helps. You'll need an Android phone and the Google account you use for Play. You don't have to win, or even play much: a run now and then is plenty.</p>
-      <ol class="steps">
-        <li class="card">
-          <strong>Join the testers group</strong>
-          <p>Join the Pixel Gambit testers Google Group with the same Google account you use on your phone. If you use a different account, Google won't count you as a tester. Already in it for Fastline? Then you're all set for this step.</p>
-          <div class="actions" style="margin-top:12px"><a class="btn" href="https://groups.google.com/g/pixelgambit-testers">Join the group</a></div>
-        </li>
-        <li class="card">
-          <strong>Opt in on Google Play</strong>
-          <p>Open the testing page with the same Google account and tap "Become a tester". If it says the app isn't available, wait a few minutes after joining the group and try again.</p>
-          <div class="actions" style="margin-top:12px"><a class="btn" href="https://play.google.com/apps/testing/com.pixelgambit.monsterbound">Open the testing page</a></div>
-        </li>
-        <li class="card">
-          <strong>Install Monster Bound from Play</strong>
-          <p>Download it from the Play Store link on the testing page, then open it at least once.</p>
-        </li>
-        <li class="card">
-          <strong>Keep it installed for 14 days</strong>
-          <p>Play as much or as little as you like. Uninstalling early means you stop counting as a tester.</p>
-        </li>
-      </ol>
-
-      <div class="note">
-        <p><strong>Found a bug or have an idea?</strong> Use "Send feedback" on Monster Bound's Play Store page, or email <a href="mailto:ericdekock@gmail.com">ericdekock@gmail.com</a>. Every note is read.</p>
-      </div>
-
-      <p class="credit">Monster Bound is inspired by <em>Scoundrel</em>, a solo card game by Zach Gage and Kurt Bieg. Music by Darren Curtis and AlkaKrab. Table photographs by Jenelle van Heerden, Rob Tuytel and Dimitrios Savva (Poly Haven), Lennart Demes (ambientCG), Brady Erickson (Texturelabs), Karolina Grabowska (Kaboompics) and Everytexture. <a href="privacy/">Privacy policy</a>.</p>
-    </div>
+    </section>
   </main>
 
-  <footer class="site">
+  <footer class="mb-footer">
     <div class="wrap">
       <span>© 2026 Pixel Gambit</span>
       <a href="../">All apps and games</a>
